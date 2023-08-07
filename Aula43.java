@@ -6,10 +6,10 @@ public class Aula43 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String palavra; int num;
-        System.out.print("Digite uma palavra: ");
+        System.out.print("Digite um nome de um gay: ");
         palavra = input.next();
-        System.out.println("A palavra digitada foi: " + palavra);
-        System.out.print("Digite outra palavra e um número inteiro: ");
+        System.out.println("O nome digitado foi: " + palavra);
+        System.out.print("Digite outro nome e um número inteiro: ");
         palavra = input.next();
         num=input.nextInt();
         System.out.println("Você digitou: " + palavra +" "+ num);
