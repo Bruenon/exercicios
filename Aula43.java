@@ -7,6 +7,6 @@ public class Aula43 {
         Scanner input = new Scanner(System.in);
         String palavra; int num;
         System.out.print("Digite uma")
-        input.close();
+        input.close();//aaaaaaaaaa
     }
 }
