@@ -2,8 +2,8 @@ import java.util.Scanner;
 public class brueno {
 
     public static void main(String[] args) {
-        Pessoa bruno = new Pessoa("bruno", 17);
-        bruno.mudar_nome("pedro");
+        Pessoa bruno = new Pessoa("Bruno", 17);
+        bruno.mudar_nome("Pedro");
 
     }
 }
