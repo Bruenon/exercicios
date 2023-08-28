@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-<<<<<<< HEAD
-      <module fileurl="file://$PROJECT_DIR$/Aula3.iml" filepath="$PROJECT_DIR$/Aula3.iml" />
-=======
-      <module fileurl="file://$PROJECT_DIR$/Lista2.iml" filepath="$PROJECT_DIR$/Lista2.iml" />
->>>>>>> 7b230bc (Lista 2 de Exercício)
+      <module fileurl="file://$PROJECT_DIR$/.idea/Exercícios Programação - Senai.iml" filepath="$PROJECT_DIR$/.idea/Exercícios Programação - Senai.iml" />
     </modules>
   </component>
 </project>
