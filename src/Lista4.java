@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Lista4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        /*
+
         // Exercício 1
         System.out.println("------Exercicio 1------");
         int n1;
@@ -45,7 +45,7 @@ public class Lista4 {
             float caso1 = sc.nextFloat();
             System.out.print("Digite o Valor do caso:");
             float caso2 = sc.nextFloat();
-            Sys.out.print("Digite o Valor do caso:");
+            System.out.print("Digite o Valor do caso:");
             float caso3 = sc.nextFloat();
 
             float media = ((caso1 * 2) + (caso2 * 3) + (caso3 * 5)) / 3;
@@ -91,7 +91,7 @@ public class Lista4 {
             System.out.printf("Seus divisores são: %s, %s\n", div, num2 % i);
             }
         }
-        */
+
         //Exercício 7
         System.out.println("------Exercicio 7------");
         System.out.print("Digite um número positivo: ");
