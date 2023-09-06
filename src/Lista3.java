@@ -12,7 +12,7 @@ public class Lista3 {
             System.out.print(i+" ");
         }
         System.out.println("... Fogo!");
-
+      
         //While Exercício Fixação:
         System.out.println("-----Exercício While-----");
         int senha;

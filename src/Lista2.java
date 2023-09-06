@@ -1,12 +1,11 @@
 import java.util.Scanner;
-import java.util.HashMap;
-import java.util.Map;
 
 public class Lista2 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
         //Exercício 1
+        System.out.println("------Exercicio 1------");
         System.out.print("Digite um número: ");
         double numero = input.nextDouble();
         System.out.println("O número informado é:");
@@ -17,6 +16,7 @@ public class Lista2 {
         }
 
         //Exercício 2
+        System.out.println("------Exercicio 2------");
         if (numero % 2 == 0) {
             System.out.println("Par");
         } else {
@@ -24,6 +24,7 @@ public class Lista2 {
         }
 
         //Exercício 3
+        System.out.println("------Exercicio 3------");
         double A, B;
         System.out.println("Digite dois números: ");
         A = input.nextLong();
@@ -38,6 +39,7 @@ public class Lista2 {
         }
 
         //Exercício 4
+        System.out.println("------Exercicio 4------");
         int hora1, hora2, duracao;
         System.out.print("Digite quando começou o jogo: ");
         hora1 = input.nextInt();
@@ -45,41 +47,53 @@ public class Lista2 {
         hora2 = input.nextInt();
         duracao = hora2 - hora1;
         if (hora1 >= 1 && hora2 <= 24) {
-            System.out.println("A duração do jogo foi de "+ duracao +" horas.");
+            System.out.println("A duração do jogo foi de "+ Math.abs(duracao) +" horas.");
         } else {
             System.out.println("Você digitou um número de horas inválido.");
         }
-        //Exercício 5
-        Map<Integer, Double> produtos = new HashMap<>();
-        produtos.put(1, 4.0);
-        produtos.put(2, 4.5);
-        produtos.put(3, 5.0);
-        produtos.put(4, 2.0);
-        produtos.put(5, 1.5);
-
-        System.out.print("Digite o código do produto: \n");
-        int codigoProduto = input.nextInt();
-        switch (codigoProduto) {
-            case 1 -> System.out.println("Você escolheu Pizza com preço unitário de R$4.0.");
-            case 2 -> System.out.println("Você escolheu Xburguer com preço unitário de R$4.5.");
-            case 3 -> System.out.println("Você escolheu Xbacon com preço unitário de R$5.0.");
-            case 4 -> System.out.println("Você escolheu Xsalada com preço unitário de R$2.0.");
-            case 5 -> System.out.println("Você escolheu Refri com preço unitário de R$1.5.");
-            default -> System.out.println("Você digitou um código inválido! Digite um código de 1 a 5.");
-        }
-
-        System.out.print("Digite a quantidade: \n");
-        int quantidade = input.nextInt();
-
-        Double precoUnitario = produtos.get(codigoProduto);
-        if (precoUnitario != null) {
-            double precoFinal = precoUnitario * quantidade;
-            System.out.printf("O preço final é: R$%.2f%n", precoFinal);
+        //Exercício 5 - fazer com if sem usar get!!
+        System.out.println("------Exercicio 5------");
+        int cod, quant;
+        System.out.print("Digite o código: ");
+        cod = input.nextInt();
+        System.out.print("Qual a quantidade? ");
+        quant = input.nextInt();
+        if (cod == 1) {
+            double pizza, resu;
+            pizza = 4;
+            resu = pizza * quant;
+            System.out.printf("Você escolheu pizza com valor unitário de %sR$.\n", pizza);
+            System.out.printf("O total a pagar é de %sR$.\n", resu);
+        } else if (cod == 2) {
+            double xburger, resu;
+            xburger = 4.5;
+            resu = xburger * quant;
+            System.out.printf("Você escolheu Xburger com valor unitário de %sR$.\n", xburger);
+            System.out.printf("O total a pagar é de %sR$.\n", resu);
+        } else if (cod == 3) {
+            double xbacon, resu;
+            xbacon = 5;
+            resu = xbacon * quant;
+            System.out.printf("Você escolheu Xbacon com valor unitário de %sR$.\n", xbacon);
+            System.out.printf("O total a pagar é de %sR$.\n", resu);
+        } else if (cod == 4) {
+            double xsalada, resu;
+            xsalada = 2;
+            resu = xsalada * quant;
+            System.out.printf("Você escolheu Xsalada com valor unitário de %sR$.\n", xsalada);
+            System.out.printf("O total a pagar é de %sR$.\n", resu);
+        } else if (cod == 5) {
+            double refri, resu;
+            refri = 1.5;
+            resu = refri * quant;
+            System.out.printf("Você escolheu Refri com valor unitário de %sR$.\n", refri);
+            System.out.printf("O total a pagar é de %sR$.\n", resu);
         } else {
-            System.out.println("Código de produto inválido.");
+            System.out.println("Código inválido.");
         }
 
-        //Exercício 6
+        //Exercício 6 Faltou o fora do intervalo
+        System.out.println("------Exercicio 6------");
         System.out.print("Digite um número: ");
         long valor = input.nextLong();
         if (valor >= 0 && valor <= 25) {
@@ -90,16 +104,23 @@ public class Lista2 {
             System.out.println("O número está entre 50 e 75");
         } else if (valor >= 75 && valor <= 100) {
             System.out.println("O número está entre 75 e 100");
+        } else {
+            System.out.println("Fora de intervalo.");
         }
 
-        //Exercício 7
+        //Exercício 7 refazer conforme enunciado
+        System.out.println("------Exercicio 7------");
         System.out.print("Digite o valor de X: ");
         float x = input.nextFloat();
         System.out.print("Digite o valor de Y: ");
         float y = input.nextFloat();
 
-        if (x == 0 || y == 0) {
-            System.out.println("Está no eixo.");
+        if (x == 0 && y == 0) {
+            System.out.println("Origem.");
+        } else if (x == 0) {
+            System.out.println("Eixo X.");
+        } else if (y == 0) {
+            System.out.println("Eixo Y.");
         } else if (x > 0 && y > 0) {
             System.out.println("1° Quadrante.");
         } else if (x < 0 && y > 0) {
@@ -111,6 +132,7 @@ public class Lista2 {
         }
 
         //Exercício 8
+        System.out.println("------Exercicio 8------");
         double salario, resultado;
         System.out.print("Digite o seu salário: ");
         salario = input.nextDouble();
@@ -129,10 +151,10 @@ public class Lista2 {
             System.out.print(" Ou seja você vai pagar "+resultado+".");
         } else if (salario > 4664.68) {
             System.out.println("Você deve pagar 27,5% de imposto.");
-            resultado = (salario * 2) / 100;
+            resultado = (salario * 1.275);
             System.out.print(" Ou seja você vai pagar "+resultado+".");
         } else {
-            System.out.println("Salário Baixo.");
+            System.out.println("Salário isento de imposto");
         }
     }
 }
