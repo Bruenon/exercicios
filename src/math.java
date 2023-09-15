@@ -40,4 +40,8 @@ public class math {
 
         input.close();
     }
+
+    public static Object exp(int num1) {
+        return null;
+    }
 }
