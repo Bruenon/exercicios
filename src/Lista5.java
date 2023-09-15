@@ -60,7 +60,7 @@ public class Lista5 {
     }
         //Exercício 2
         double num1, num2;
-        System.out.printf("1. Soma\n2. Subtração\n3. Multiplicação\n4. Divisão\n5. Porcentagem\n6. Raiz\n7. Potência");
+        System.out.printf("1. Soma\n2. Subtração\n3. Multiplicação\n4. Divisão\n5. Porcentagem\n6. Raiz\n7. Potência\n");
         System.out.println("Digite o Código da Operação: ");
         int codigo = sc.nextInt();
         System.out.print("Digite o primeiro número: ");
